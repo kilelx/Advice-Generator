@@ -32,6 +32,7 @@ function getAdvice(adviceObj) {
 
     document.getElementById("button").setAttribute("disabled", "true");
 
+//     Modifying the svg according to the time left before getting a new advice
     document.querySelectorAll("#svg-divider rect").forEach((rect) => {
         rect.style.opacity = "0.5";
     })
