@@ -1,4 +1,4 @@
-[View live site](https://kilelx.github.io/Tip-Calculator/)
+[View live site](https://kilelx.github.io/Advice-Generator/)
 
 # Frontend Mentor - Advice generator app solution
 
