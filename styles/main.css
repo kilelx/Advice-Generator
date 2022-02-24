@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* VARIABLES */
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(216, 23%, 25%);
+    --dark-grayish-blue: hsl(222, 19%, 14%);
+}
+
+/* BODY */
+body {
+    background-color: var(--dark-grayish-blue);
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+main {
+    background-color: var(--grayish-blue);
+    border-radius: 10px;
+    padding: 40px 25px 70px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+}
+
+#advice-number {
+    color: var(--neon-green);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#advice {
+    color: var(--light-cyan);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.svg {
+    margin-top: 1.25rem;
+}
+
+#button {
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+
+    position: absolute;
+    bottom: calc(-65px/2);
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s;
+}
+
+#button:disabled {
+    cursor: auto;
+    opacity: .5;
+
+    transition: opacity .3s;
+}
+
+#button:disabled:hover {
+    filter: drop-shadow(0 0 0);
+}
+
+#button:hover {
+    filter: drop-shadow(0 0 15px var(--neon-green));
+}
+
+#button:disabled:hover img {
+    transform: scale(1);
+}
+
+#button img {
+    width: 25px;
+    height: 25px;
+
+    transition: all .15s ease-in-out;
+}
+
+#button:hover img {
+    transform: scale(1.2);
+}
+
+footer {
+    position: absolute;
+
+    bottom: 20px;
+}
+
+@keyframes throwDice {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(180deg);
+    }
+}
