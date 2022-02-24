@@ -1,4 +1,4 @@
-[View live site](https://kilelx.github.io/Advice-Generator/)
+[View live site](https://kilelx.github.io/Advice-Generator-API/)
 
 # Frontend Mentor - Advice generator app solution
 
@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [View live site](https://kilelx.github.io/Advice-Generator/)
+- Solution URL: [View live site](https://kilelx.github.io/Advice-Generator-API/)
 
 ## My process
 
